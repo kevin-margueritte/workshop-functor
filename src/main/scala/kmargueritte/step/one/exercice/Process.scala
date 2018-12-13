@@ -1,16 +1,13 @@
 package kmargueritte.step.one.exercice
 
-import cats.Functor
 import cats.effect.IO
 
-import kmargueritte.core.model.{Behaviour, City, Restaurant, Weather}
+import kmargueritte.core.model.City
 import kmargueritte.core.result._
 import kmargueritte.core.service.ServiceFunctor
 
 object Process extends App {
-  import cats.instances.list._
   import io.circe.syntax._
-  import kmargueritte.core.result.functorInstance._
   import WeatherEncoder._
 
   val service = new ServiceFunctor
