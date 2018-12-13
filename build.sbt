@@ -29,8 +29,7 @@ lazy val generalSettings = Seq(
     "-language:higherKinds",
     "-language:experimental.macros"
   ),
-  addCompilerPlugin(kindProjector),
-  fork in Test := false
+  addCompilerPlugin(kindProjector)
 )
   
 
